@@ -1,0 +1,31 @@
+{
+  "name": "crowdfunding-web3",
+  "version": "1.0.0",
+  "description": "Web3 Crowdfunding Platform Smart Contracts",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "start:local": "hardhat node",
+    "deploy:all": "npm run compile && npm run deploy:local",
+    "copy-artifacts": "node scripts/copy-artifacts.js",
+    "build": "npm run compile && npm run copy-artifacts"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0",
+    "dotenv": "^16.0.3",
+    "react-router-dom": "^6.30.0",
+    "react-toastify": "^9.1.3"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "chai": "^4.3.7",
+    "ethereum-waffle": "^4.0.10",
+    "ethers": "^5.8.0",
+    "hardhat": "^2.14.0"
+  }
+}

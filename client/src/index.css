@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#13131a] text-white font-epilogue;
+  }
+}
+
+.linear-gradient {
+  background: linear-gradient(
+    179.14deg,
+    rgba(32, 18, 63, 0) -7.14%,
+    #000000 87.01%
+  );
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.8);
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c1c24;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a3a43;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4a4a53;
+}
+
+/* Dark theme form elements */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #1c1c24 inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+/* Toast notification dark theme */
+.Toastify__toast {
+  background: #1c1c24 !important;
+  color: white !important;
+}
+
+.Toastify__close-button {
+  color: #808191 !important;
+}
+
+.Toastify__progress-bar {
+  background: #1dc071 !important;
+}

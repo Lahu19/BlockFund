@@ -1,0 +1,10 @@
+export { default as Home } from './Home';
+export { default as Dashboard } from "./Dashboard";
+export { default as Login } from "./Login";
+export { default as PartyDetails } from "./PartyDetails";
+export { default as RegisterParty } from "./RegisterParty";
+export { default as Campaigns } from "./Campaigns";
+export { default as Profile } from "./Profile";
+export { default as CampaignDetails } from './CampaignDetails';
+export { default as CreateCampaign } from './CreateCampaign';
+export { default as RegistrationOfUser } from "./RegistrationOfUser";
